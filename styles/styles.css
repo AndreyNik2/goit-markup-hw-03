@@ -18,6 +18,11 @@ button{
     cursor: pointer;
 }
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .conteiner{
     width: 1200px;
     margin: 0 auto;
@@ -49,6 +54,11 @@ body {
 }
 
 /* Logo */
+
+.header{
+    border-bottom:1px solid #ECECEC ;
+}
+
 .logo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -119,6 +129,8 @@ body {
 }
 
 .contactus-item-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--grey-text-color);
 }
 .contactus-item-link:hover, .contactus-item-link:focus{
@@ -132,19 +144,18 @@ body {
 
 .hero{
     text-align: center;
-    width: 1200px; 
-    height: 600px;
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.hero>.hero-title{
+.hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-background-color);
-    padding-top: 200px;
     margin-bottom: 30px;
 }
 
@@ -197,7 +208,6 @@ body {
 
 
 .ex-title{
-    padding-top: 94px;
     margin-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -211,15 +221,17 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom:94px;
-
-
-}
+    }
 
 
 
 
 /* -----------------------------Jobs & Team----------------------------*/
+
+.mod{
+    padding-top: 0;
+}
+
 .jobs-title, .team-title{
     text-align: center;
     font-size: 36px;
@@ -234,7 +246,6 @@ body {
 
 .jobs-list{
     display: flex;
-    padding-bottom: 94px;
 }
 
 .jobs-list .jobs-list-item + .jobs-list-item{
@@ -246,7 +257,6 @@ body {
 }
 
 .team-title{
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -260,11 +270,16 @@ body {
 }
 
 .team-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-background-color);
 }
 
-.team-item-img{
-    margin-bottom: 50px;
+
+
+.wrapr{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -293,8 +308,10 @@ body {
 
 /* Footer */
 
-.conteiner-footer{
+.footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-span-footer{
@@ -303,7 +320,6 @@ body {
 
 .footer-link{
     display: inline-block;
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -311,9 +327,6 @@ body {
     margin-bottom: 9px;
 }
 
-.footer-item:last-child{
-    padding-bottom: 60px;
-}
 
 .footer-adress{
     font-style: normal;
@@ -339,8 +352,7 @@ body {
 /* --------------------------------Filter--------------------- -*/
 
 .filter{
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .portfolio-filter-list{
@@ -352,6 +364,7 @@ body {
     display: block;
     padding: 6px 22px;
     border-radius: 6px;
+    border: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -375,21 +388,27 @@ body {
     color: var(--primary-background-color);
 }
 
-.portfolio{
-    padding-bottom: 94px;
-}
 
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-bottom: -30px;
 }
 
+
+
 .portfolio-item{
-    flex-basis: calc(100%/3 - 30px);
-    margin-left: 30px;
+    width: calc((100% - 60px)/3);
+    margin-right: 30px;
     margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-item:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
+
+.portfolio-item:nth-child(3n){
+    margin-right: 0;
 }
 /* .portfolio-item{
     margin-bottom: 30px;
@@ -410,9 +429,12 @@ body {
     margin-right: 0;
 } */
 
+.portdolio-text-div{
+    padding: 20px 24px;
+}
+
 .portfolio-img{
     display: block;
-    margin-bottom: 20px;
 }
 
 .portfolio-title{
@@ -424,7 +446,6 @@ body {
 }
 
 .portfolio-text{
-    padding-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
